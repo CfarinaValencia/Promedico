@@ -1,0 +1,154 @@
+body{
+  background-color: rgb(168, 6, 6);
+}
+#form-1 {
+  background-color: #ffffff;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Agregamos la propiedad flex-direction para que los elementos se muestren en columna */
+  border-radius: 10px;
+  max-width: 900px;
+  height: 1000px;
+
+}
+#cc{
+  margin-top: 50px;
+  font-family: sans-serif;
+}
+h1 {
+  color: rgb(168, 6, 6);
+  font-family:sans-serif;
+  font-size: 22px;
+  max-height: 110px;
+}
+
+
+#logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px; /* Agregamos un margen inferior de 20px */
+  height: 400px;
+}
+
+#logo img {
+  padding: 0px;
+  margin: 0px;
+  width: 150px;
+  height: 80px;
+}
+.container h2 {
+  text-align: center;
+  margin-left: 70px;
+  margin-right: 70px;
+  /* verificar como centrar titulo  */
+}
+
+
+.container {
+  display: flex;
+  margin-top: 100px;
+}
+#respuestas div  {
+  margin-bottom: 7px;
+  margin-left: 70px;
+}
+
+#pr-sr div {
+  display: block;
+  margin-bottom: 10px;
+}
+#btn-sgte img {
+  cursor: pointer;                     
+  margin-left: 800px;
+  margin-top: 180px;
+}
+
+h1 {
+  color: rgb(168, 6, 6);
+  font-family:sans-serif;
+  font-size: 18px;
+  max-height: 30px;
+}
+
+
+/* Media queries */
+@media screen and (max-width: 767px) {
+  /* Estilos para dispositivos móviles */
+  #logo {
+  height: 200px;
+  }
+  #logo img {
+  width: 100px;
+  height: 70px;
+  }
+  .container {
+  flex-direction: row;
+  margin-left: 40px;
+  }
+  #respuestas div {
+  margin-right: 10px;
+  margin-bottom: 8px;
+  }
+  #btn-sgte img {
+  margin-left: 0;
+  margin-top: 30px;
+  }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+  /* Estilos para tablets */
+  #logo {
+  height: 300px;
+  }
+  #logo img {
+  width: 100px;
+  height: 50px;
+  }
+  .container {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  }
+  #respuestas div {
+  margin-left: 0;
+  }
+  #pr-sr div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  }
+  #btn-sgte img {
+  margin-left: 0;
+  margin-top: 50px;
+  }
+  }
+  
+  @media screen and (min-width: 992px) {
+  /* Estilos para pantallas grandes */
+  #logo {
+  height: 400px;
+  }
+  #logo img {
+  width: 150px;
+  height: 80px;
+  }
+  .container {
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-top: 100px;
+  }
+  #respuestas div {
+  margin-left: 70px;
+  }
+  #pr-sr div {
+  display: flex;
+  margin-bottom: 10px;
+  }
+  #btn-sgte img {
+  margin-left: 800px;
+  margin-top: 180px;
+  }
+  }
+
+

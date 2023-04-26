@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Login-1.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+            <div id="form-1">
+
+                <div id="logo">
+                  <img src="../IMG/promedico-1.jpg" alt="Logo de la empresa">
+                </div>
+                
+                  
+                 <p>Por favor, Seleccione los productos y servicios que conoce.</p>
+
+            
+                <div class="flexbox-container"> 
+                  <table>
+                    <tr>
+                      <td>Amparo mutual de Vida</td>
+                      <td>
+                        <div class="wrapper">
+                          <input type="radio" name="amparo-1" id="option-1" value="si" checked class="hidden-inputs">
+                          <input type="radio" name="amparo-1" id="option-2" value="no" class="hidden-inputs">
+                          <label for="option-1" class="option option-1">
+                            <div class="dot"></div>
+                            <span>SI</span>
+                          </label>
+                          <label for="option-2" class="option option-2">
+                            <div class="dot"></div>
+                            <span>NO</span>
+                          </label>
+                        </div>
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <td>Amparo mutual de Vida</td>
+                      <td>
+                        <div class="wrapper">
+                          <input type="radio" name="amparo-2" id="option-3" value="si" checked class="hidden-inputs">
+                          <input type="radio" name="amparo-2" id="option-4" value="no" class="hidden-inputs">
+                          <label for="option-3" class="option option-1">
+                            <div class="dot"></div>
+                            <span>SI</span>
+                          </label>
+                          <label for="option-4" class="option option-2">
+                            <div class="dot"></div>
+                            <span>NO</span>
+                          </label>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                  
+                  
+                  
+                    
+
+                </div>
+                    
+        
+                
+                        <button type="submit">
+                            <span>&gt;</span>
+                        </button>
+                
+                
+              
+                
+               
+            </div>
+   
+      <style>
+        .flexbox-container {
+        display: -ms-flex;
+        display: -webkit-flex;
+        display: flex;
+}
+
+.flexbox-container > div {
+        width: auto;
+        padding: 5px;
+}
+
+.flexbox-container > div:first-child {
+        margin-right: 20px;
+}
+/* --codigo radio check-- */
+.hidden-inputs {
+  display: none;
+} 
+.wrapper{
+  height: 10px;
+  width: 200px; /* updated value */
+  display: inline-flex;
+  background: #fff;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  padding: 20px 15px;
+  box-shadow: 5px 5px 30px rgba(0,0,0,0.2);
+}
+.wrapper .option{
+  background: #fff;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0 10px;
+  border: 2px solid lightgrey;
+  transition: all 0.3s ease;
+}
+.wrapper .option .dot{
+  height: 20px;
+  width: 20px;
+  background: #ffffff;
+
+  border-radius: 50%;
+  position: relative;
+}
+.wrapper .option .dot::before{
+  position: absolute;
+  
+  top: 4px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+
+}
+input[type="checkbox"]{
+  display: none;
+  
+  
+}
+#option-1:checked ~ .option-1,
+#option-2:checked ~ .option-2,
+#option-3:checked ~ .option-3,
+#option-4:checked ~ .option-4
+{
+  background-color: rgb(155, 7, 7);
+}
+#option-1:checked ~ .option-1 .dot,
+#option-2:checked ~ .option-2 .dot
+#option-3:checked ~ .option-3 .dot,
+#option-4:checked ~ .option-4 .dot
+{
+  background: #fff;
+}
+
+.wrapper .option span{
+  font-size: 20px;
+  color: #808080;
+}
+input[type="checkbox"]:checked ~ .option span{
+  color: #fff;
+}
+table {
+  border-collapse: collapse;
+}
+
+td {
+  padding: 5px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+td:last-child {
+  text-align: center;
+}
+
+label {
+  display: inline-flex;
+  align-items: center;
+}
+
+.input-checkbox {
+  margin-right: 5px;
+}
+
+.label-text {
+  margin-left: 2px;
+}
+
+
+
+            body{
+              background-color: rgb(168, 6, 6);
+            }
+            #form-1 {
+              background-color: #ffffff;
+              margin: 0 auto;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column; /* Agregamos la propiedad flex-direction para que los elementos se muestren en columna */
+              border-radius: 10px;
+              max-width: 900px;
+              height: 800px;
+            }
+            .rating {
+              display: inline-block;
+              direction: rtl;
+             
+            }
+          
+            .rating input {
+              display:none;
+              
+            }
+
+            .rating label {
+              font-size: 70px;
+              color: #b3aeaeb9;
+              cursor: pointer;
+            }
+
+            .rating label:hover,
+            .rating label:hover ~ label,
+            .rating input:checked ~ label {
+              color: #FFD700;
+              direction: ltr;
+              
+            }
+            .rating label {
+            position: relative; /* Agregamos posición relativa para poder posicionar el span de forma absoluta */
+            font-size: 50px;
+            color: #b3aeaeb9;
+            cursor: pointer;
+          }
+
+          .rating label span {
+            position: absolute;
+            bottom: -40px; /* Ajustamos la distancia del span hacia abajo */
+            left: 50%;
+            font-size: 20px;
+            color: #000000;
+          }
+   
+            h1 {
+              color: rgb(168, 6, 6);
+              font-family:sans-serif;
+              font-size: 18px;
+              max-height: 30px;
+            }
+
+       
+                #logo {
+                  padding-top: auto;
+  align-self: flex-start;
+}
+
+#logo img {
+  top: 50px; /* Agregamos un margen inferior de 20px */
+  width: 140px;
+  height: 100px;
+}
+
+
+
+            label, h1, input {
+              padding: 10px;
+              margin: 10px;
+              flex: 1 1 100%;
+              max-width: 100%;
+             
+            }
+            input {
+              border: none;
+              border-bottom: 2px solid black;
+            }
+            button[type="submit"]  {
+              align-self: flex-end;
+              margin-top: 10px;
+              padding: 10px;
+              background-color: rgb(168, 6, 6);
+              color: #ffffff;
+              border: none;
+              border-radius: 30px;
+              width: 50px;
+              height: 50px;
+              font-size: 30px;
+              margin-right: 40px; /* Agregamos un margen derecho de 30px */
+              margin-top: 80px;
+              margin-bottom: 10px;
+            }
+            button[type="submit"]:hover{
+              background-color: red;
+              cursor: pointer;
+            }
+              
+
+
+    </style>
+  </body>
+</html>
+
