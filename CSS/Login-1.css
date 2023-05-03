@@ -114,7 +114,7 @@ input {
   }
 
   h1 {
-    top: -50px;
+    top: -30px;
     font-size: 16px;
   }
 
@@ -132,14 +132,14 @@ input {
 
   #btn-sgte img {
     left: 50%;
-    transform: translateX(-50%);
-    top: 60px;
+    transform: translateX(80%);
+    top: 100px;
   }
 
   #btn-sgte span {
-    bottom: -15px;
-    left: 50%;
-    transform: translateX(-50%);
+    bottom: -75px;
+    left: 90%;
+    transform: translateX(80%);
     font-size: 14px;
   }
 }
