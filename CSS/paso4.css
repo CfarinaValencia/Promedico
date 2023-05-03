@@ -1,5 +1,6 @@
 body{
   background-color: rgb(168, 6, 6);
+
 }
 #form-1 {
   position: relative; /* Añadimos position: relative al contenedor (#form-1) */
@@ -11,14 +12,14 @@ body{
   flex-direction: column;
   border-top-left-radius: 100px;
   border-top-right-radius: 100px;
-  max-width: 990px;
-  height: 1060px;  /*altura form  por verificar.*/
+  max-width: 790px;
+  height: 890px;  /*altura form  por verificar.*/
 }
 
 #logo {
   position: absolute;
   top: 20px;
-  left: 140px; /*movimiento del logo */
+  left: 150px; /*movimiento del logo */
   height: 50px;
   width: 50px;
 }
@@ -37,35 +38,31 @@ body{
   color: rgb(0, 0, 0);
 
 }
-.titulo-bienvenido h2{
 
-  font-size: 30px ;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 
-  'Lucida Grande', sans-serif; 
-  font-weight: bold;
-  text-align: center;
-  color: rgb(100, 99, 99);
-
-}
-.pregunta-titulo {
-  font-size: 19px ;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 
-  'Lucida Grande', sans-serif; 
-  font-weight: bold;
-  color: rgb(100, 99, 99);
-}
-
-.titulo-bienvenido h2 span{
+.txt-pregunta h2 span{
  color:#990000
 }
 .txt-pregunta{
+  position: relative;
+  top: -130px;
   font-size: 20px ;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 
   'Lucida Grande', sans-serif;
   text-align: center;
   color: rgb(100, 99, 99);
-
-
+}
+.txt-pregunta2{
+  position: relative;
+  top: -40px;
+  font-size: 20px ;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 
+  'Lucida Grande', sans-serif;
+  text-align: center;
+  color: rgb(100, 99, 99);
+}
+#respuestas div  {
+ position: relative;
+ left: -40px;
 }
 .progress-bar-container {
   width: 800px;
@@ -73,7 +70,7 @@ body{
   background-color: #ccc;
   border-radius: 20px;
   position: relative;
-  top: -80px; /*altura de la barra de progeso */
+  top: -200px; /*altura de la barra de progeso */
 }
 
 
@@ -97,25 +94,65 @@ body{
   font-weight: bold;
   color: #990000; 
 }
-
-input {
-  border: none;
-  border-bottom: 2px solid rgb(223, 218, 218);
-  margin-left: 10px;
+.rating {
+  display: inline-block;
+  direction: rtl;
+ 
 }
+
+.rating input {
+  display:none;
+  font-size: 90px;
+
+}
+
+.rating label {
+  position: relative;
+  top: -100px;
+  font-size: 50px;
+  color: #b3aeaeb9;
+  cursor: pointer;
+  margin: 20px;
+  
+}
+
+.rating label:hover,
+.rating label:hover ~ label,
+.rating input:checked ~ label {
+  color: #990000; 
+  direction: ltr; /*sentido hacia donde va la estrella */
+  
+}
+.rating label {
+position: relative; /* Agregamos posición relativa para poder posicionar el span de forma absoluta */
+font-size: 90px; /*tamaño de la estrella */
+color: #b3aeaeb9;
+cursor: pointer;
+}
+
+.rating label span {
+position: absolute;
+bottom: -40px; /* Ajustamos la distancia del span hacia abajo */
+left: 50%;
+font-size: 20px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 
+  'Lucida Grande', sans-serif; 
+color: #000000;
+}
+
+
 
 #btn-sgte img {
   cursor: pointer;
+  position: relative;
+right: -500px;
+top:300px
 }
-#btn-sgte{
- position: relative;
- bottom: -159px;
- left: 380px;
-}
+
 #btn-sgte span{
   position: absolute;
-  top: 20px;
-  right: 60px;
+  top: 320px;
+  right: -350px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 
   'Lucida Grande', sans-serif; 
   font-weight: bold;
@@ -124,9 +161,6 @@ input {
 
  .container h2 {
   text-align: center;
-  /* margin-left: 70px;
-  margin-right: 70px; */
-
 }
 
 
@@ -134,7 +168,8 @@ input {
   display: flex;
 }
 #respuestas div  {
-  margin-bottom: 7px;
+  position: relative;
+
 }
 
 
@@ -147,8 +182,8 @@ h1 {
 /* Ajustar el tamaño de la imagen */
 .rayas img {
   position: absolute;
-  bottom: 35px;
-  left: 1px;
+  bottom: 10px;
+  left: 5px;
   width: 200px; /* Ancho del 100% del contenedor */
   height:65px; /* Altura automática para mantener la proporción */
 }
