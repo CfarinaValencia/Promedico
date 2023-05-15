@@ -1,7 +1,7 @@
 body{
   background-color: rgb(168, 6, 6);
 }
-#form-1 {
+.form-1 {
   position: relative; /* Añadimos position: relative al contenedor (#form-1) */
   background-color: #ffffff;
   margin: 0 auto;
@@ -11,26 +11,21 @@ body{
   flex-direction: column;
   border-top-left-radius: 100px;
   border-top-right-radius: 100px;
-  max-width: 990px;
-  height: 800px;
+  max-width: 590px;
+  height: 574px;
 }
 
-#logo {
+.logo_img{
   position: absolute;
-  top: 20px;
-  left: 140px; /*movimiento del logo */
+  top: 30px;
+  left: 60px; /*movimiento del logo */
   height: 50px;
   width: 50px;
 }
-
-#logo img {
-  height: 50px;
-}
-
 .pasos {
   position: absolute;
   top: 20px;
-  right: 97px;
+  right: 60px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 
   'Lucida Grande', sans-serif; 
   font-size: 18px;
@@ -38,54 +33,69 @@ body{
   color: rgb(0, 0, 0);
 
 }
-.titulo-bienvenido h2{
-  font-size: 30px ;
+.titulo_bienvenido{
+  font-size: 17px ;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 
   'Lucida Grande', sans-serif; 
   font-weight: bold;
+  position: relative;
+  top: 30px;
   color: rgb(100, 99, 99);
 
 }
-.texto-secundario p{
-  font-size: 20px ;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 
-  'Lucida Grande', sans-serif;
+.txt_secundario {
+  font-size: 17px ;
+  font-family: sans-serif;
+  font-weight: bold;
+  position: relative;
+  top: 30px;
   text-align: center;
   color: rgb(100, 99, 99);
 }
-.txt-pregunta h2 span{
+.txt_resaltado{
  color:#990000
 }
-.txt-pregunta{
-  font-size: 20px ;
+.txt_pregunta{
+  font-size: 17px ;
+  position: relative;
+  top: 30px;
+  font-weight: bold;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 
   'Lucida Grande', sans-serif;
   text-align: center;
   color: rgb(100, 99, 99);
-
-
 }
-.progress-bar-container {
-  width: 800px;
+.txt_califica{
+  font-size: 13px ;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 
+  'Lucida Grande', sans-serif;
+  text-align: center;
+  color: rgb(100, 99, 99);
+  position: relative;
+  bottom: -10px;
+}
+.contenedor_bar {
+  width: 540px;
   height: 10px;
   background-color: #ccc;
   border-radius: 20px;
   position: relative;
-  top: -60px;
+  top: 20px;
+  left: 8px;
 }
 
 
-.progress-bar {
+.progreso_bar {
   height: 100%;
   background-color: #990000;
   border-radius: 20px;
   transition: width 0.5s ease-in-out;
   position: relative;
-  width: 20%;
+  width: 10%; /*porcentaje*/
   
 }
 
-.progress-text {
+.progress_text {
   position: absolute;
   top: -30px;
   left: 50%;
@@ -142,7 +152,7 @@ input {
 .rating label:hover,
 .rating label:hover ~ label,
 .rating input:checked ~ label {
-  color: #FFD700;
+  color: #990000;
   direction: ltr; /*sentido hacia donde va la estrella */
   
 }

@@ -2,7 +2,7 @@ body{
   background-color: rgb(168, 6, 6);
 
 }
-#form-1 {
+.form-1 {
   position: relative; /* Añadimos position: relative al contenedor (#form-1) */
   background-color: #ffffff;
   margin: 0 auto;
@@ -12,80 +12,85 @@ body{
   flex-direction: column;
   border-top-left-radius: 100px;
   border-top-right-radius: 100px;
-  max-width: 790px;
-  height: 890px;  /*altura form  por verificar.*/
+  max-width: 590px;
+  height: 700px;
 }
 
-#logo {
+.logo_img{
   position: absolute;
-  top: 20px;
-  left: 150px; /*movimiento del logo */
+  top: 30px;
+  left: 50px; /*movimiento del logo */
   height: 50px;
   width: 50px;
-}
-
-#logo img {
-  height: 50px;
 }
 .pasos {
   position: absolute;
   top: 20px;
-  right: 97px;
+  right: 37px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 
   'Lucida Grande', sans-serif; 
   font-size: 18px;
   font-weight: bold;
-  color: rgb(0, 0, 0);
+  color: rgb(100, 99, 99);
 
 }
 
-.txt-pregunta h2 span{
- color:#990000
-}
-.txt-pregunta{
+.txt_resaltado{
+  color:#990000
+ }
+.txt_pregunta{
+  font-size: 17px ;
   position: relative;
-  top: -130px;
-  font-size: 20px ;
+  top: 40px; /*Altura de texto pregunta*/
+  font-weight: bold;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 
   'Lucida Grande', sans-serif;
   text-align: center;
   color: rgb(100, 99, 99);
 }
-.txt-pregunta2{
+.txt_califica{
+  font-size: 13px ;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 
+  'Lucida Grande', sans-serif;
+  text-align: center;
+  color: rgb(100, 99, 99);
   position: relative;
-  top: -40px;
-  font-size: 20px ;
+  top: 10px;  /*Altura texto califica*/
+}
+
+.txt_pregunta2{
+  font-size: 17px ;
+  position: relative;
+  top: -20px; /*Altura de pregunta2*/
+  font-weight: bold;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 
   'Lucida Grande', sans-serif;
   text-align: center;
   color: rgb(100, 99, 99);
 }
-#respuestas div  {
- position: relative;
- left: -40px;
-}
-.progress-bar-container {
-  width: 800px;
+
+.contenedor_bar{
+  width: 516px;
   height: 10px;
   background-color: #ccc;
   border-radius: 20px;
   position: relative;
-  top: -200px; /*altura de la barra de progeso */
+  top: 1px; /*altura de la barra de progeso */
 }
 
 
-.progress-bar {
+.progreso_bar {
   height: 100%;
   background-color: #990000;
   border-radius: 20px;
   transition: width 0.5s ease-in-out;
   position: relative;
-  width: 20%;
+  width: 17%; /*ancho de progreso.*/
   display: inline-block;
   
 }
 
-.progress-text {
+.progreso_txt {
   position: relative;
   top: -20px;
   left: 50%;
@@ -96,7 +101,7 @@ body{
 }
 .rating {
   display: inline-block;
-  direction: rtl;
+  direction: rtl; /*sentido o direccion de estrellas*/
  
 }
 
@@ -106,9 +111,9 @@ body{
 
 }
 
-.rating label {
+.rating{
   position: relative;
-  top: -100px;
+  top: -40px; /*altura de estrellas*/
   font-size: 50px;
   color: #b3aeaeb9;
   cursor: pointer;
@@ -135,14 +140,93 @@ position: absolute;
 bottom: -40px; /* Ajustamos la distancia del span hacia abajo */
 left: 50%;
 font-size: 20px;
+font-weight: bold;
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 
   'Lucida Grande', sans-serif; 
-color: #000000;
+color: #706d6d;
+}
+
+/*toggle button*/
+.btn_radio {
+  position: relative;
+  top: 60px;
+	display: flex;
+	margin-bottom: 36px;
+	overflow: hidden;
+  
+}
+.btn_radio input {
+	position: absolute !important;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.btn_radio label {
+	background-color: #ffffff;
+	color: rgba(201, 0, 0, 0.76);
+	font-size: 14px;
+	line-height: 1;
+	text-align: center;
+	padding: 8px 16px;
+	margin-right: -1px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(43, 42, 42, 0.1);
+	transition: all 0.1s ease-in-out;
+}
+
+.btn_radio label:hover {
+	cursor: pointer;
+}
+.btn_radio input:checked + label {
+	background-color: #750202;
+  color: #ffffff;
+	box-shadow: none;
+}
+.btn_radio label:first-of-type {
+	border-radius: 4px 0 0 4px;
+}
+
+.btn_radio label:last-of-type {
+	border-radius: 0 4px 4px 0;
 }
 
 
+/*FIN toggle button*/
 
-#btn-sgte img {
+
+
+
+
+
+
+
+
+
+/* 
+.rayas{
+  position: relative;
+  height: 90px;
+  right:  170px;
+  top: 60px;
+} */
+.txt_btn{
+  color: rgb(168, 6, 6);
+  font-family:sans-serif;
+  font-weight: bold;
+  position: relative;
+  left: 200px;
+  top: -18px;
+}
+.btn_sgte{
+  cursor: pointer;
+  position: relative;
+  left: 211px;
+  top:5px
+}
+
+/* #btn-sgte img {
   cursor: pointer;
   position: relative;
 right: -500px;
@@ -157,36 +241,8 @@ top:300px
   'Lucida Grande', sans-serif; 
   font-weight: bold;
   color: #990000;
- }
+ } */
 
- .container h2 {
-  text-align: center;
-}
-
-
-.container {
-  display: flex;
-}
-#respuestas div  {
-  position: relative;
-
-}
-
-
-h1 {
-  color: rgb(168, 6, 6);
-  font-family:sans-serif;
-  font-size: 18px;
-  max-height: 30px;
-}
-/* Ajustar el tamaño de la imagen */
-.rayas img {
-  position: absolute;
-  bottom: 10px;
-  left: 5px;
-  width: 200px; /* Ancho del 100% del contenedor */
-  height:65px; /* Altura automática para mantener la proporción */
-}
 
 /* Media queries */
 @media screen and (max-width: 768px) {
