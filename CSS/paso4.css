@@ -13,20 +13,20 @@ body{
   border-top-left-radius: 100px;
   border-top-right-radius: 100px;
   max-width: 590px;
-  height: 700px;
+  height: 800px;
 }
 
 .logo_img{
-  position: absolute;
+  position: relative;
   top: 30px;
-  left: 50px; /*movimiento del logo */
+  right: 210px; /*movimiento del logo */
   height: 50px;
   width: 50px;
 }
 .pasos {
-  position: absolute;
-  top: 20px;
-  right: 37px;
+  position: relative;
+  top: -30px;
+  left: 197px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 
   'Lucida Grande', sans-serif; 
   font-size: 18px;
@@ -75,7 +75,7 @@ body{
   background-color: #ccc;
   border-radius: 20px;
   position: relative;
-  top: 1px; /*altura de la barra de progeso */
+  bottom: 10px; /*altura de la barra de progeso */
 }
 
 
@@ -149,13 +149,14 @@ color: #706d6d;
 /*toggle button*/
 .btn_radio {
   position: relative;
-  top: 60px;
+  bottom: 20px;
 	display: flex;
 	margin-bottom: 36px;
 	overflow: hidden;
   
 }
 .btn_radio input {
+
 	position: absolute !important;
 	clip: rect(0, 0, 0, 0);
 	height: 1px;
@@ -164,6 +165,8 @@ color: #706d6d;
 }
 
 .btn_radio label {
+  height: 30px;
+  margin-top: 2px;
 	background-color: #ffffff;
 	color: rgba(201, 0, 0, 0.76);
 	font-size: 14px;
@@ -192,115 +195,109 @@ color: #706d6d;
 	border-radius: 0 4px 4px 0;
 }
 
-
 /*FIN toggle button*/
-
-
-
-
-
-
-
-
-
-
-/* 
 .rayas{
   position: relative;
   height: 90px;
-  right:  170px;
+  right: 243px;
   top: 60px;
-} */
+}
 .txt_btn{
   color: rgb(168, 6, 6);
   font-family:sans-serif;
   font-weight: bold;
   position: relative;
   left: 200px;
-  top: -18px;
+  top: -28px;
 }
 .btn_sgte{
   cursor: pointer;
   position: relative;
   left: 211px;
-  top:5px
+  top:-7px
 }
-
-/* #btn-sgte img {
-  cursor: pointer;
-  position: relative;
-right: -500px;
-top:300px
-}
-
-#btn-sgte span{
-  position: absolute;
-  top: 320px;
-  right: -350px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 
-  'Lucida Grande', sans-serif; 
-  font-weight: bold;
-  color: #990000;
- } */
 
 
 /* Media queries */
-@media screen and (max-width: 768px) {
+@media (max-width: 580px) {
+  
+  .form-1 {
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
 
-  #form-1 {
-    max-width: 500px;
+    margin-right: 10px;
+    width: 100%;
     height: auto;
-    padding: 0px;
   }
-
-  #logo img {
-    width: 90px;
-    height: 40px;
+  .logo_img{
+    top: 10px;
+   right: 98px;
   }
-
-  h1 {
-    font-size: 18px;
-    max-height: 80px;
+  .pasos{
+    left: 100px;
+    color: rgb(100, 99, 99);
+    font-size: small;
   }
-
-  .separador {
-    width: 280px;
+  .contenedor_bar{
+    margin-right: 0px;
+    padding-right: 0px;
+    width: 266px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 20px;
+    top: -10px; /*altura de la barra de progeso */
+    left: 5px;
   }
-
-  input {
-    max-width: 300px;
+  .progreso_bar{
+    left: 1px;
+    height: 100%;
+    background-color: #990000;
+    border-radius: 20px;
+    transition: width 0.1s ease-in-out;
+    width: 41px; /*ancho de progreso.*/
   }
+  .progreso_txt {
+    position: relative;
+    top: -20px;
+    left: 40%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    
+  }
+  .rayas{
+    cursor: pointer;
+    left: -100px;
+    top: 90px;   
 
-  #btn-sgte img {
-    margin-left: 0;
-    margin-top: 30px;
-    /* align-self: flex-end;  verificar como colocar a la derecha  */
+  }
+  .txt_btn{
+    left: 70px;
+
+  }
+  .btn_sgte{
+    cursor: pointer;
+    left: 80px;
+    top: 1px;
+  }
+  .txt_califica{
+    font-size: 8px;
+    top: 5px;
+  }
+  .rating label{
+    font-size: 50px;
+  }
+  .txt_pregunta {
+    font-size: 10px;
+    width: 220px;
+    top: 10px;
+  }
+  .txt_pregunta2 {
+    font-size: 10px;
+    width: 220px;
+    top: 10px;
+  }
+  .btn_radio{
+    top: 20px;
+    height: 38px;
   }
 }
-
-@media screen and (max-width: 480px) {
-
-  #form-1 {
-    max-width: 300px;
-  }
-
-  #logo img {
-    width: 80px;
-    height: 40px;
-  }
-
-  h1 {
-    font-size: 16px;
-    max-height: 60px;
-  }
-
-  .separador {
-    width: 150px;
-  }
-
-  input {
-    max-width: 200px;
-  }
-}
-
-

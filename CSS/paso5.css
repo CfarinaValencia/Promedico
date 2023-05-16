@@ -228,3 +228,73 @@ td:nth-child(3) {
   left: 211px;
   top:60px
 }
+@media (max-width: 580px) {
+  
+  .form-1 {
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+
+    margin-right: 10px;
+    width: 100%;
+    height: auto;
+  }
+  .logo_img{
+   left: 70px;
+  }
+  .pasos{
+    color: rgb(100, 99, 99);
+    font-size: small;
+  }
+  .contenedor_bar{
+    margin-right: 0px;
+    padding-right: 0px;
+    width: 266px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 20px;
+    top: 80px; /*altura de la barra de progeso */
+  }
+  .progreso_bar{
+    
+    
+    left: 1px;
+    height: 100%;
+    background-color: #990000;
+    border-radius: 20px;
+    transition: width 0.1s ease-in-out;
+    width: 41px; /*ancho de progreso.*/
+    
+  }
+  .progreso_txt {
+    position: relative;
+    top: -20px;
+    left: 40%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    
+  }
+  .rayas{
+    cursor: pointer;
+    left: -55px;
+    top: 50px;   
+
+  }
+  .btn_sgte{
+    cursor: pointer;
+    left: 70px;
+    top: 1px;
+  }
+  .txt_califica{
+    font-size: 8px;
+    top: 70px;
+  }
+  .tabla{
+    top: 72px;
+    font-size: 13px;
+  }
+  .txt_pregunta2{
+    font-size: 10px;
+    width: 220px;
+    
+  }
+}
