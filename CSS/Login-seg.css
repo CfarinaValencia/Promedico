@@ -130,6 +130,7 @@ top: 5px;
   top: 60px;
   display: inline-block;
 }
+
 @media only screen and (min-width: 330px) and (max-width: 768px) {
   body{
     background-color: rgb(168, 6, 6);

@@ -12,7 +12,7 @@ body{
   border-top-left-radius: 100px;
   border-top-right-radius: 100px;
   max-width: 590px;
-  height: 574px;
+  height: 874px;
 }
 
 .logo_img{
@@ -33,13 +33,14 @@ body{
   color: rgb(0, 0, 0);
 
 }
+
 .titulo_bienvenido{
   font-size: 17px ;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 
   'Lucida Grande', sans-serif; 
   font-weight: bold;
   position: relative;
-  top: 30px;
+  top: -50px;
   color: rgb(100, 99, 99);
 
 }
@@ -48,7 +49,7 @@ body{
   font-family: sans-serif;
   font-weight: bold;
   position: relative;
-  top: 30px;
+  top: -50px;
   text-align: center;
   color: rgb(100, 99, 99);
 }
@@ -58,7 +59,7 @@ body{
 .txt_pregunta{
   font-size: 17px ;
   position: relative;
-  top: 30px;
+  top: -70px;
   font-weight: bold;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 
   'Lucida Grande', sans-serif;
@@ -72,7 +73,7 @@ body{
   text-align: center;
   color: rgb(100, 99, 99);
   position: relative;
-  bottom: -10px;
+  bottom: 90px;
 }
 .contenedor_bar {
   width: 540px;
@@ -80,7 +81,7 @@ body{
   background-color: #ccc;
   border-radius: 20px;
   position: relative;
-  top: 20px;
+  top: -90px;
   left: 8px;
 }
 
@@ -159,13 +160,15 @@ input {
 .rating label {
 position: relative; /* Agregamos posición relativa para poder posicionar el span de forma absoluta */
 font-size: 50px;
+bottom: 90px; /* Ajustamos la distancia del span hacia abajo */
+
 color: #b3aeaeb9;
 cursor: pointer;
 }
 
 .rating label span {
 position: absolute;
-bottom: -40px; /* Ajustamos la distancia del span hacia abajo */
+bottom: -50px; /* Ajustamos la distancia del span hacia abajo */
 left: 50%;
 font-size: 20px;
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 
@@ -187,6 +190,32 @@ h1 {
   width: 300px; /* Ancho del 100% del contenedor */
   height:90px; /* Altura automática para mantener la proporción */
 }
+/*CHECKBOX PREGUNTAS*/
+.custom-checkbox {
+  display: flex;
+  margin-bottom: 20px;
+  border: 3px solid #7a7a7a;
+  padding: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 170px;
+  
+}
+
+.custom-checkbox input {
+  display: none;
+}
+
+.custom-checkbox .checkbox-text {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+}
+.custom-checkbox:hover,
+.custom-checkbox :checked {
+  background-color: gray;
+}
+
 
 /* Media queries */
 @media screen and (max-width: 768px) {
