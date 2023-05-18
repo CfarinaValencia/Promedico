@@ -19,7 +19,7 @@ body{
 .logo_img{
   position: absolute;
   top: 10px;
-  left: 60px; /*movimiento del logo */
+  left: 50px; /*movimiento del logo */
   height: 50px;
   width: 50px;
 }
@@ -284,7 +284,9 @@ td:nth-child(3) {
     height: auto;
   }
   .logo_img{
-   left: 70px;
+   left: 20px;
+   height: 40px;
+   width: 40px;
   }
   .pasos{
     color: rgb(100, 99, 99);

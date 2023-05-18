@@ -1,0 +1,91 @@
+body{
+  background-color: rgb(168, 6, 6);
+
+}
+.form-1 {
+  background-color: #ffffff;
+  border-radius: 30px;
+  max-width: 650px;
+  height: 474px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  position: relative;
+  left: 266px;
+  top: 40px;
+  height: 100px;
+  width: 110px;
+}
+.enunciado{
+    font-size: 37px ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 
+    'Lucida Grande', sans-serif; 
+    font-weight: bold;
+    position: relative;
+    left: 260px;
+    color: rgb(100, 99, 99);
+}
+.enunciado2{
+  font-size: 27px;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 
+  'Lucida Grande', sans-serif; 
+  font-weight: bold;
+  position: relative;
+  left: 10px;
+    color: rgb(100, 99, 99);
+}
+
+.btn_final{
+  position: relative;
+  top: 190px;
+  left: 190px;
+  width: 270px;
+  font-size: 40px;
+  border-radius: 30px;
+  background-color: #ffffff;
+  
+}
+.puertabtn{
+  position: relative;
+  top: 4px;
+  right: 20px;
+  width: 70px;
+}
+.letra_final{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 
+  'Lucida Grande', sans-serif;
+   position: relative;
+   top:-20px;
+   right: 10px;
+  color:rgb(168, 6, 6);
+  font-weight: bold;
+  font-size: 22px;
+} 
+@media (max-width: 580px) {
+  .form-1{
+    width: auto;
+  }
+  .logo{
+    position: relative;
+    left: 150px;
+  }
+  .enunciado{
+    position: relative;
+    left: 140px;
+  }
+  .enunciado2{
+    position: relative;
+    left: auto;
+  }
+  .btn_final{
+    position: relative;
+    top: 130px;
+    left: 50px;
+  }
+}
+  
+
